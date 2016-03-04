@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+	.box1{background:red; height:200px;}
+	<!-- absolute需要有已经定位的父元素，那么它的原始位置依旧保持在原来的位置（参照基准） -->
+	.box2{background:green; height:100px;position:absolute;}
+	.box3{background:blue; height:200px;}
+	.box{position:relative;height:60px; background:yellow;}
+</style>
+</head>
+
+<body>
+	<div class="box1">box1</div>
+   	<div class="box">
+      	<div class="box2">box2</div>
+      </div>
+   <div class="box3">box3</div>
+</body>
+</html>

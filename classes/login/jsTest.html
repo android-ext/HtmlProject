@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Busy - 电商</title>
+    <script type="text/javascript">
+
+        function initEvent() {
+            var selectIcon = document.getElementById('select_triangle');
+            var selectItem = document.getElementById('select_options');
+            var selectItems = selectItem.getElementsByTagName('li');;
+            var selectName = document.getElementById('select_name');
+            for (var i = 0, len = selectItems.length; i < len; i++) {
+               var item = selectItems[i];
+                item.index = i;
+                item.onclick = function () {
+                    var itemI = this.index;
+                    selectName.innerHTML = selectItems[itemI].innerHTML;
+                    selectItem.style.height = '0';
+                }
+            }
+            selectIcon.onclick = function () {
+                if (parseInt(selectItem.style.height) == 0) {
+                    selectItem.style.height = '100px';
+                } else {
+                    selectItem.style.height = '0';
+                }
+            }
+        }
+
+    </script>
+    <style>
+
+        body,ul,h3{margin: 0; padding: 0;}
+        li{list-style: none;}
+
+        .select{
+            height: 24px;
+            border:solid 1px #ccc;
+            float: left;
+            position: relative;
+            margin: 30px;
+
+        }
+        .select_name{
+            font-size: 12px;
+            width: 60px;
+            font-weight: normal;
+            line-height: 24px;
+            padding: 0 24px 0 7px;
+        }
+        .select_triangle{
+            border-width: 8px;
+            border-style: solid dotted dashed;
+            border-color: rgb(80, 174, 248) transparent  transparent;
+            width: 0; height: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 10px;
+            right: 4px;
+        }
+        .select_options{
+            width: 100%;
+            border: solid 1px #ccc;
+            background-color: #ff0;
+            position: absolute;
+            overflow: hidden;
+            left: -1px;
+            top: 23px;
+            font-size: 12px;
+            line-height: 24px;
+            text-indent: 7px;
+            height: 0;
+        }
+    </style>
+</head>
+
+<body onload="initEvent()">
+<div class="select">
+    <h3 class="select_name" id="select_name">继续努力哦</h3>
+    <span id='select_triangle' class="select_triangle"></span>
+    <ul class="select_options" id="select_options">
+        <li>选项1</li>
+        <li>选项2</li>
+        <li>选项3</li>
+        <li>选项4</li>
+    </ul>
+</div>
+</body>
+</html>

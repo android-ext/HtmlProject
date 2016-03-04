@@ -1,0 +1,6 @@
+<MKM version="2.0" imageFileUrl="file:///F:/Html/HtmlDemo/images/qq.png">
+  <Marks>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="3247829" offsetX="25" offsetY="10" x="13" y="25"/>
+    <LengthMark direction="12" color="16711680" length="86" x="0" y="46"/>
+  </Marks>
+</MKM>

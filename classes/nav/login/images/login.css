@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin:0;
+	padding:0;
+	height:1600px;
+}
+
+.auto {
+	width:480px;
+	margin:0 auto;	
+}
+/** 输入电话号码容器 */
+#content .inputStype {	
+	height:36px;
+	margin:35px auto 0 auto;	
+	padding-bottom: 15px;
+	border-bottom:1px solid #ececec;	
+}
+
+#content img {
+	float:left;
+}
+
+/** 输入电话号码容器 */
+#content .inputStype {	
+	height:36px;
+	margin:35px auto 0 auto;	
+	padding-bottom: 15px;
+	border-bottom:1px solid #ececec;	
+}
+
+/** 文本输入框 */
+#content .inputText {
+	display:block;
+	float:left;
+	height:26px;
+	width:320px;
+	margin-left:30px;
+	border:0 solid #fff000;	
+}
+
+/** 输入验证码 */
+#content .passwordContainer {	
+	height:36px;
+	margin:68px auto 0 auto;
+}
+
+/** 输入验证码容器 */
+#content .passwordDiv {
+	height:36px;
+	width:300px;
+	border:0 solid #fff000;	
+	float:left;
+	padding-bottom: 15px;
+	border:0 solid #fff000;	
+	border-bottom:1px solid #ececec;	
+}
+
+/** 输入验证码 */
+#content .passwordInput {
+	float:left;
+	display:block;
+	height:26px;
+	width:180px;
+	margin-left:30px;
+	border:0 solid #fff000;	
+}
+
+/** 获取验证码 */
+#content .passwordContainer img.obtainCode {
+	display:block;
+	float:right;	
+	width: 150px;
+	height:36px;
+}
+
+#content .passwordContainer img.obtainCode:hover {
+	background:url(obtain_hover.png);
+	cursor:pointer;
+}
+
+/** 提交按钮 */
+#submit {
+	background:url(log_submit_default.png);
+	border:none;	
+	display:block;
+	width:480px;
+	height:80px;
+	margin-top:54px;
+}
+
+#submit:visited {
+	border:none;
+}
+
+#submit:hover {
+	background:url(login_hover.png);
+	cursor:pointer;
+}
+
+#footer {
+	margin-top:40px;
+}
+
+#footer .server {
+	border: none;
+	float:left;
+	text-align:left;
+	font-size:20px;
+	color:#f37b46;
+	width:130px;
+	background:#fff;
+	padding:0px;
+	margin:0;
+}
+
+#footer .server:hover {
+	cursor:pointer;	
+}
+
+#footer .passwordLogin {
+	border: none;
+	float:right;
+	text-align:right;
+	font-size:20px;
+	color:#f37b46;
+	width:130px;
+	background:#fff;
+	padding:0px;
+	margin:0;
+}
+#footer .passwordLogin:hover {
+	cursor:pointer;	
+}
+
+
+
+
+

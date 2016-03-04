@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="author" content="w3school.com.cn"/>
+    <meta rel="stylesheet" type="text/css" href="/css/frameset.css"/>
+    <title>W3School在线测试工具</title>
+</head>
+<body>
+
+    <form action="/tiy/v.asp" method="post" id="tryitform" name="tryitform" onsubmit="validateForm();" target="i">
+       <div id="butt">
+        <input type="button" value="提交代码" onclick="submitTryIt()"/>
+       </div>
+
+        <div id="CodeArea">
+            <h2>编辑您的代码:</h2>
+            <textarea id="TestCode" wrap="logical">
+                "<html>
+                    <frameset cols="200, *">
+                        <frame src="toc.html">
+                        <frame src="pref.html" name="view_frame">
+                    </frameset>
+                </html>
+                "
+            </textarea>
+        </div>
+        <input type="hidden" id="code" name="code">
+        <input type="hidden" id="bt" name="bt">
+    </form>
+    <div id="result">
+        <h2>查看结果：</h2>
+    </div>
+
+</body>
+</html>
